@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:layout_height="200dp"
+        android:layout_width="match_parent"
+        >
+        <TextView
+            android:id="@+id/curDurText"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:layout_marginEnd="125dp"
+            android:layout_marginBottom="40dp"/>
+        <SeekBar
+            android:id="@+id/playBar"
+            android:layout_width="300dp"
+            android:layout_gravity="center"
+            android:layout_height="50dp"/>
+        <TextView
+            android:id="@+id/leastDurText"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="125dp"
+            android:layout_marginBottom="40dp"/>
+    </FrameLayout>
+
+   <androidx.appcompat.widget.LinearLayoutCompat
+       android:layout_width="match_parent"
+       android:layout_height="200dp"
+       android:gravity="center">
+
+       <Button
+           android:id="@+id/pauseBtn"
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:text="Pause"
+           android:enabled="false"/>
+
+       <Button
+           android:id="@+id/playBtn"
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:text="Play" />
+
+       <Button
+           android:id="@+id/stopBtn"
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:text="Stop" />
+   </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
